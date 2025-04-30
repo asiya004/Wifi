@@ -1,0 +1,28 @@
+using System;
+using System.Windows.Forms;
+
+namespace WifiLoginApp
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string login = textBox1.Text.Trim();
+            string parol = textBox2.Text.Trim();
+
+            if (login == "Karimov" && parol == "Ali")
+            {
+                MessageBox.Show($"Hurmatli {login}, siz Wifiga ulandingiz.", "Xabar");
+            }
+            else
+            {
+                MessageBox.Show("Login yoki parol xato!", "Xato");
+            }
+        }
+    }
+}
